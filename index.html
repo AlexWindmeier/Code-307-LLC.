@@ -7,7 +7,30 @@
   <title>Code-307 LLC | Emergency Lighting & Upfitting</title>
   <link rel="icon" type="image/png" href="code307-logo.png">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" as="image" href="code307-top-hero.jpg">
+<style>
+/* Code-307 hero image */
+.code307-hero,
+.hero,
+.hero-section,
+header.hero {
+  background-image: url('code307-top-hero.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+</style>
+<style id="code307-custom-hero">
+/* Code-307 custom top hero */
+.code307-hero,
+.hero,
+.hero-section,
+header.hero {
+  background-image: url('code307-top-hero.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -17,12 +40,17 @@
       </a>
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#top">Home</a>
         <a href="#services">Services</a>
-        <a href="#builds">Projects</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#applications">Applications</a>
+        <a href="#builds">Builds</a>
+        <a href="#brands">Brands</a>
+        <a href="#videos">Videos</a>
+        <a href="#faq">FAQ</a>
         <a href="#about">About</a>
-        <a href="#quote">Contact</a>
-        <a class="nav-quote" href="#quote">Request a Quote <span>›</span></a>
+        <a href="#why-code307">Why Code-307</a>
+        <a href="#quote">Request a Quote</a>
+        <a class="nav-phone" href="tel:+13073315487">307-331-5487</a>
       </nav>
     </div>
   </header>
@@ -34,60 +62,29 @@
         <p class="eyebrow">CODE-307 LLC</p>
         <h1>Emergency Lighting<br><span>&amp; Upfitting</span></h1>
         <p class="hero-copy">
-          With 10+ years of emergency services experience, Code-307 LLC provides
-          professional emergency lighting and vehicle upfitting throughout Wyoming,
-          Nebraska, and Colorado.
+          Professional lighting and vehicle upfitting built around the way you work. Proudly serving Wyoming, Nebraska, and Colorado.
+          From emergency response vehicles to work trucks, bring us your bright ideas.
         </p>
         <div class="hero-buttons">
-          <a class="btn btn-primary" href="#services">Our Services <span>›</span></a>
-          <a class="btn btn-outline" href="#builds">View Projects <span>›</span></a>
+          <a class="btn btn-primary" href="#quote">Request a Quote</a>
+          <a class="btn btn-outline" href="#services">Explore Services</a>
         </div>
         <a class="hero-phone" href="tel:+13073315487">Call Code-307: <strong>307-331-5487</strong></a>
       </div>
     </section>
 
-    <section class="intro experience-intro">
+    <section class="intro">
       <div class="container intro-grid">
         <div>
-          <p class="section-kicker">EXPERIENCE YOU CAN COUNT ON.</p>
-          <h2>Equipment you can trust.</h2>
+          <p class="section-kicker">BUILT FOR THE MISSION</p>
+          <h2>Lighting that works when it matters.</h2>
         </div>
         <p>
-          With 10+ years of experience in the emergency services industry, Code-307
-          understands that emergency vehicles are tools people depend on when seconds
-          matter. We focus on quality equipment, clean installations, and practical
-          setups designed around the vehicle and the mission.
+          Code-307 LLC provides emergency lighting and vehicle upfitting solutions
+          designed around your vehicle, your equipment, and your mission. We focus
+          on clean installations and practical setups that look professional and
+          perform in the field.
         </p>
-      </div>
-    </section>
-
-    <section class="experience-strip" aria-label="Why choose Code-307">
-      <div class="container experience-grid">
-        <article>
-          <div class="feature-icon">★</div>
-          <h3>10+ Years<br>of Experience</h3>
-          <p>A decade of hands-on experience in the emergency services industry.</p>
-        </article>
-        <article>
-          <div class="feature-icon">◉</div>
-          <h3>Quality<br>Equipment</h3>
-          <p>Trusted brands selected for the vehicle and application.</p>
-        </article>
-        <article>
-          <div class="feature-icon">⚒</div>
-          <h3>Clean, Professional<br>Installations</h3>
-          <p>Organized wiring, thoughtful equipment placement, and a finished look.</p>
-        </article>
-        <article>
-          <div class="feature-icon">●</div>
-          <h3>Built Around<br>Your Needs</h3>
-          <p>Every department, agency, and vehicle gets a setup built for its mission.</p>
-        </article>
-        <article>
-          <div class="feature-icon">✓</div>
-          <h3>Emergency Services<br>Experience</h3>
-          <p>We understand visibility, reliability, functionality, and ease of use.</p>
-        </article>
       </div>
     </section>
 
@@ -345,8 +342,8 @@
         <div class="why-grid">
           <article class="why-card">
             <div class="why-number">01</div>
-            <h3>Built Around Your Needs</h3>
-            <p>Every vehicle has a different purpose. Every department, agency, and vehicle is different. We design equipment setups around your vehicle, budget, and operational needs.</p>
+            <h3>Built Around Your Mission</h3>
+            <p>Every vehicle has a different purpose. We help match the lighting and equipment to the job your vehicle needs to perform.</p>
           </article>
           <article class="why-card">
             <div class="why-number">02</div>
@@ -355,13 +352,13 @@
           </article>
           <article class="why-card">
             <div class="why-number">03</div>
-            <h3>Quality Equipment</h3>
-            <p>We work with trusted manufacturers including Whelen, SoundOff Signal, STL SpeedTech Lights, Havis, Nilight, and more.</p>
+            <h3>One Company, Multiple Solutions</h3>
+            <p>From emergency lighting and sirens to work lights, graphics, consoles, and push bumpers, we can help bring your build together.</p>
           </article>
           <article class="why-card">
             <div class="why-number">04</div>
-            <h3>Emergency Services Experience</h3>
-            <p>Our emergency services background means we understand the importance of visibility, reliability, functionality, and ease of use.</p>
+            <h3>Regional Service</h3>
+            <p>Based in Wheatland, Wyoming, Code-307 serves customers throughout Wyoming, Nebraska, and Colorado.</p>
           </article>
         </div>
       </div>
@@ -389,7 +386,6 @@
             customer create a vehicle that is functional, professional, and ready to
             perform when it matters most.
           </p>
-          <div class="experience-badge"><strong>10+</strong><span>YEARS OF EXPERIENCE<br>IN EMERGENCY SERVICES</span></div>
           <p class="tagline">“Bring Us Your Bright Ideas!”</p>
           <p class="service-area"><strong>Based in Wheatland, Wyoming</strong><br>Serving Wyoming • Nebraska • Colorado</p>
         </div>

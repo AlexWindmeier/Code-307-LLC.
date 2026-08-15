@@ -1,24 +1,21 @@
-CODE-307 LLC Website — V13 Experience Design
+# Code-307 LLC Website
 
-This ZIP is a complete replacement for the current Code-307 website files.
+This is a free, mobile-friendly static website for Code-307 LLC.
 
-Included:
-- index.html
-- styles.css
-- code307-top-hero.jpg
-- Code-307 logo
-- Current Brush 21 and Palmer Canyon Brush 4 videos
-- Matching thumbnails
-- Current project photos
+## Files
+- `index.html` — website
+- `styles.css` — design and responsive layout
+- `code307-logo.png` — Code-307 logo
 
-To update GitHub Pages:
-1. Download/unzip this folder on your computer.
-2. Open your Code-307 GitHub repository.
-3. Replace the existing website files with the files in this folder.
-4. Keep all files in the repository's main/root directory.
-5. GitHub Pages should publish the updated site automatically.
+## Important before publishing
+Quote requests are configured to send to `code307llc@gmail.com`.
 
-The quote form is still configured to open an email addressed to:
-code307llc@gmail.com
+## Adding a hero photo
+The design will automatically use `code307-hero.jpg` if you add a photo with that exact filename to this folder.
 
-This version adds the 10+ years of experience messaging and a five-point experience/quality strip while keeping the existing services, projects, videos, FAQ, about section, and quote form.
+A good choice is a high-quality photo of a completed Code-307 emergency vehicle build.
+
+## Free hosting
+The site can be published free with GitHub Pages. No paid web hosting is required.
+
+You can also add a custom domain later if you decide to purchase one.
