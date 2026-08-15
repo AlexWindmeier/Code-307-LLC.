@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Code-307 LLC — Emergency Lighting & Upfitting. Professional vehicle lighting, work lighting, sirens, reflective graphics, consoles and push bumpers.">
+<link rel="icon" type="image/png" href="code307-logo.png">
+<link rel="stylesheet" href="styles.css">
+<style>
+.code307-hero,.hero,.hero-section,header.hero{
+  background-image:url('code307-top-hero.jpg') !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+</style><title>Code-307 LLC | Services</title>
+<style>
+.nav a.active{color:#1688e8;}
+.page-hero{padding:155px 0 70px;background:#07192d;position:relative;overflow:hidden;}
+.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,15,29,.96),rgba(4,15,29,.70),rgba(4,15,29,.35));pointer-events:none;}
+.page-hero .container{position:relative;z-index:1;}
+.page-hero h1{color:#fff;font-size:clamp(2.8rem,6vw,5rem);margin:.1em 0 .2em;}
+.page-hero p{color:#d4dce7;max-width:760px;font-size:1.08rem;line-height:1.6;}
+.subpage-cta{background:#07192d;color:#fff;padding:55px 0;}
+.subpage-cta h2{color:#fff;margin-top:0;}
+.subpage-cta p{color:#cbd5e1;}
+.link-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
+@media(max-width:700px){.page-hero{padding:130px 0 55px;}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Code-307 LLC home"><img src="code307-logo.png" alt="Code-307 LLC — Emergency Lighting & Upfitting"></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html" class="">Projects</a>
+      <a href="equipment.html" class="">Equipment</a>
+      <a href="about.html" class="">About</a>
+      <a href="videos.html" class="">Videos</a>
+      <a href="quote.html" class="">Request a Quote</a>
+      <a class="nav-phone" href="tel:+13073315487">307-331-5487</a></nav>
+  </div>
+</header>
+<main id="top">
+
+<section class="page-hero"><div class="container"><p class="section-kicker">CODE-307 SERVICES</p><h1>Our Services</h1><p>Professional emergency lighting and vehicle upfitting services designed around your vehicle, equipment, budget, and mission.</p></div></section>
+<section class="section"><div class="container"><div class="cards">
+<article class="card"><div class="card-icon">01</div><h3>Emergency Lighting</h3><p>Emergency lighting installation and upgrades tailored to your vehicle and operational needs.</p></article>
+<article class="card"><div class="card-icon">02</div><h3>Work &amp; Scene Lighting</h3><p>Scene and work lighting installations to help keep the job visible after the sun goes down.</p></article>
+<article class="card"><div class="card-icon">03</div><h3>Siren Installation</h3><p>Siren and warning-system installation integrated into your vehicle's overall upfit.</p></article>
+<article class="card"><div class="card-icon">04</div><h3>Reflective Graphics</h3><p>Reflective graphics and markings that improve visibility while giving your vehicle a finished look.</p></article>
+<article class="card"><div class="card-icon">05</div><h3>Vehicle Consoles</h3><p>Console solutions that keep controls organized, accessible, and ready for the road.</p></article>
+<article class="card"><div class="card-icon">06</div><h3>Push Bumpers</h3><p>Push-bumper installation for emergency and specialty vehicle applications.</p></article>
+</div></div></section>
+<section class="section section-dark"><div class="container"><div class="section-heading light"><p class="section-kicker">APPLICATIONS</p><h2>Built around your vehicle.</h2><p>We work with fire and rescue vehicles, command vehicles, work trucks, semis, storm-chasing vehicles, and custom applications.</p></div><div class="application-grid"><div class="application">Fire / Rescue</div><div class="application">Emergency Command</div><div class="application">Storm Chasers</div><div class="application">Work Trucks</div><div class="application">Semis / Commercial</div><div class="application">Custom Applications</div></div></div></section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="code307-logo.png" alt="Code-307 LLC logo" class="footer-logo">
+      <p>Emergency Lighting &amp; Upfitting</p>
+      <p class="footer-area">Wheatland, Wyoming<br>Serving Wyoming • Nebraska • Colorado</p>
+    </div>
+    <div class="footer-contact">
+      <a href="tel:+13073315487">307-331-5487</a>
+      <a href="quote.html">Request a Quote</a>
+    </div>
+  </div>
+  <div class="container copyright">© <span id="year"></span> Code-307 LLC. All rights reserved.</div>
+</footer>
+<script>
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open);});
+document.querySelectorAll('.nav a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+</script>
+</body></html>

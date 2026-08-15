@@ -1,21 +1,16 @@
-# Code-307 LLC Website
+CODE-307 LLC WEBSITE — VERSION 14
+Multi-page update based on Version 12.
 
-This is a free, mobile-friendly static website for Code-307 LLC.
+This version keeps the Version 12 visual design, hero image, colors, videos, thumbnails, and project photos, but separates the long one-page content into subpages:
 
-## Files
-- `index.html` — website
-- `styles.css` — design and responsive layout
-- `code307-logo.png` — Code-307 logo
+Home: index.html
+Services: services.html
+Projects: projects.html
+Equipment: equipment.html
+About: about.html
+Videos: videos.html
+Request a Quote: quote.html
 
-## Important before publishing
-Quote requests are configured to send to `code307llc@gmail.com`.
+Quote requests are addressed to code307llc@gmail.com.
 
-## Adding a hero photo
-The design will automatically use `code307-hero.jpg` if you add a photo with that exact filename to this folder.
-
-A good choice is a high-quality photo of a completed Code-307 emergency vehicle build.
-
-## Free hosting
-The site can be published free with GitHub Pages. No paid web hosting is required.
-
-You can also add a custom domain later if you decide to purchase one.
+Upload/replace the files in the root of your GitHub Pages repository. Keep the existing repository backed up before replacing files.
