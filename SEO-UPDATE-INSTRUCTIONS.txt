@@ -1,0 +1,16 @@
+CODE-307 SEO UPDATE
+
+These are SEO-only replacement files. Upload these files to the repository root; do NOT upload media files from the full site ZIP.
+
+Files included:
+- index.html
+- services.html
+- projects.html
+- equipment.html
+- about.html
+- videos.html
+- quote.html
+- sitemap.xml
+- robots.txt
+
+Existing images and videos remain unchanged in your GitHub repository.
