@@ -1,16 +1,19 @@
-CODE-307 LLC WEBSITE — VERSION 14
-Multi-page update based on Version 12.
+CODE-307 LLC — WHEATLAND FIRE BRUSH 16 WEBSITE UPDATE
 
-This version keeps the Version 12 visual design, hero image, colors, videos, thumbnails, and project photos, but separates the long one-page content into subpages:
+New project:
+Wheatland Fire Department Brush 16
+Work performed: Installation of an old-school rotator lightbar.
 
-Home: index.html
-Services: services.html
-Projects: projects.html
-Equipment: equipment.html
-About: about.html
-Videos: videos.html
-Request a Quote: quote.html
+Upload these new media files to the same folder as your existing website files:
+- brush-16-install.jpg
+- brush-16-completed.jpg
+- brush-16-thumbnail.jpg
+- brush-16-rotator-lightbar.mp4
 
-Quote requests are addressed to code307llc@gmail.com.
+Replace your existing projects.html and videos.html with the versions in this package.
 
-Upload/replace the files in the root of your GitHub Pages repository. Keep the existing repository backed up before replacing files.
+The updated Projects page adds Brush 16 as a third project and includes its two photos plus video.
+The updated Videos page adds Brush 16 with the matching completed-vehicle thumbnail.
+
+Optional homepage wording update:
+See recent Code-307 work, including Wheatland Fire Brush 21, Palmer Canyon Brush 4, and Wheatland Fire Brush 16.
