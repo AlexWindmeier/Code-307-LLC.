@@ -26,6 +26,17 @@
 .link-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
 @media(max-width:700px){.page-hero{padding:130px 0 55px;}}
 </style>
+<style>
+/* Shared Code-307 tab hero image */
+.tab-hero-image {
+  background-image:
+    linear-gradient(110deg, rgba(4,10,24,.90), rgba(16,21,47,.70), rgba(45,70,139,.32)),
+    url('code307-top-hero.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -45,7 +56,7 @@
 </header>
 <main id="top">
 
-<section class="page-hero"><div class="container"><p class="section-kicker">START YOUR BUILD</p><h1>Request a Quote</h1><p>Tell us about your vehicle and what you're looking for. The more details you provide, the better we can understand your project.</p></div></section>
+<section class="page-hero tab-hero-image"><div class="container"><p class="section-kicker">START YOUR BUILD</p><h1>Request a Quote</h1><p>Tell us about your vehicle and what you're looking for. The more details you provide, the better we can understand your project.</p></div></section>
 <section class="quote-section"><div class="container quote-grid">
 <div><p class="section-kicker">LET'S TALK</p><h2>Let's build your vehicle.</h2><p>Not sure exactly what you need? That's okay. Tell us what the vehicle is used for and we'll start the conversation.</p><a class="big-phone" href="tel:+13073315487">307-331-5487</a><p class="service-area"><strong>code307llc@gmail.com</strong><br>Wheatland, Wyoming<br>Serving Wyoming • Nebraska • Colorado</p></div>
 <form class="quote-form" id="quoteForm" action="mailto:code307llc@gmail.com" method="post" enctype="text/plain" onsubmit="return prepareMailto();">
