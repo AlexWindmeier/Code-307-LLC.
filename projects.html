@@ -1,55 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Code-307 LLC — Emergency Lighting & Upfitting. Completed vehicle lighting and upfitting projects.">
+<meta name="description" content="Code-307 LLC project portfolio featuring emergency vehicle lighting and upfitting work for fire apparatus and specialty vehicles in Wyoming, Nebraska and Colorado.">
 <link rel="icon" type="image/png" href="code307-logo.png">
 <link rel="stylesheet" href="styles.css">
+<title>Code-307 LLC | Emergency Vehicle Lighting & Upfitting Projects</title>
 <style>
-.code307-hero,.hero,.hero-section,header.hero{background-image:url('code307-top-hero.jpg') !important;background-size:cover !important;background-position:center center !important;background-repeat:no-repeat !important;}
-.nav a.active{color:#1688e8;}
-.page-hero{padding:155px 0 70px;background:#07192d;position:relative;overflow:hidden;}
-.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,15,29,.96),rgba(4,15,29,.70),rgba(4,15,29,.35));pointer-events:none;}
-.page-hero .container{position:relative;z-index:1;}
-.page-hero h1{color:#fff;font-size:clamp(2.8rem,6vw,5rem);margin:.1em 0 .2em;}
-.page-hero p{color:#d4dce7;max-width:760px;font-size:1.08rem;line-height:1.6;}
-.subpage-cta{background:#07192d;color:#fff;padding:55px 0;}
-.subpage-cta h2{color:#fff;margin-top:0;}
-.subpage-cta p{color:#cbd5e1;}
-.link-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
-.project-detail{margin-top:42px;}
-.project-detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
-.project-detail img{width:100%;display:block;border-radius:12px;object-fit:cover;}
-.project-detail video{width:100%;border-radius:12px;display:block;}
-.project-detail h3{margin-top:18px;}
-.project-detail p{line-height:1.7;}
-@media(max-width:700px){.page-hero{padding:130px 0 55px;}}
-</style><title>Code-307 LLC | Projects</title>
+.projects-hero{
+  padding:150px 0 68px;
+  background:#07192d url('code307-top-hero.jpg') center/cover no-repeat;
+  position:relative;
+  overflow:hidden;
+}
+.projects-hero:after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(90deg,rgba(4,15,29,.94),rgba(4,15,29,.72),rgba(4,15,29,.32));
+}
+.projects-hero .container{position:relative;z-index:1;}
+.projects-hero h1{color:#fff;font-size:clamp(2.7rem,6vw,4.8rem);margin:.1em 0 .22em;}
+.projects-hero p{color:#d4dce7;max-width:780px;font-size:1.05rem;line-height:1.65;margin:0;}
+.projects-intro{max-width:860px;margin:0 auto;text-align:center;color:var(--muted);font-size:1.05rem;line-height:1.7;}
+.project-list{display:flex;flex-direction:column;gap:34px;margin-top:42px;}
+.project-feature{
+  display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+  gap:28px;background:#fff;border:1px solid var(--line);border-radius:14px;
+  overflow:hidden;box-shadow:0 10px 28px rgba(0,0,0,.06);
+}
+.project-feature.reverse{grid-template-columns:minmax(320px,.9fr) minmax(0,1.1fr);}
+.project-media{padding:18px;background:#0b1028;display:flex;flex-direction:column;gap:12px;}
+.project-media img,.project-media video{width:100%;display:block;border-radius:9px;background:#060913;object-fit:cover;}
+.project-media .main-media{height:290px;}
+.project-media video{height:290px;}
+.project-copy{padding:34px 30px;display:flex;flex-direction:column;justify-content:center;}
+.project-label{color:var(--red);font-size:.72rem;font-weight:900;letter-spacing:.09em;margin-bottom:8px;}
+.project-copy h2{color:var(--navy);margin:0 0 10px;font-size:1.9rem;line-height:1.15;}
+.project-copy p{color:var(--muted);line-height:1.7;margin:0 0 14px;}
+.project-tags{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0 18px;}
+.project-tag{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:#f5f6f8;color:var(--navy);font-size:.72rem;font-weight:800;}
+.project-cta{margin-top:8px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+.project-cta-note{font-size:.8rem;color:var(--muted);}
+.project-gallery-block{margin-top:28px;}
+.project-gallery-heading{margin-bottom:14px;}
+.project-gallery-heading h3{color:var(--navy);margin:2px 0 5px;font-size:1.25rem;}
+.project-gallery-heading p{color:var(--muted);margin:0;line-height:1.5;}
+.project-gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.project-gallery-grid a{display:block;overflow:hidden;border-radius:8px;}
+.project-gallery-grid img{width:100%;height:115px;display:block;object-fit:cover;transition:transform .2s;}
+.project-gallery-grid a:hover img{transform:scale(1.04);}
+.projects-bottom{margin-top:48px;padding:48px 0;background:var(--navy);color:#fff;}
+.projects-bottom h2{color:#fff;margin:0 0 8px;}
+.projects-bottom p{color:#cfd6e5;margin:0 0 20px;max-width:700px;}
+@media(max-width:900px){
+  .project-feature,.project-feature.reverse{grid-template-columns:1fr;}
+  .project-copy{padding:28px 24px;}
+  .project-media .main-media,.project-media video{height:240px;}
+}
+@media(max-width:650px){
+  .project-gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .project-gallery-grid img{height:130px;}
+  .projects-hero{padding:126px 0 54px;}
+}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="container nav-wrap">
 <a class="brand" href="index.html" aria-label="Code-307 LLC home"><img src="code307-logo.png" alt="Code-307 LLC — Emergency Lighting & Upfitting"></a>
 <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-<nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html" class="active">Projects</a><a href="equipment.html">Equipment</a><a href="about.html">About</a><a href="quote.html">Request a Quote</a><a class="nav-phone" href="tel:+13073315487">307-331-5487</a></nav>
+<nav class="nav" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html" class="active">Projects</a><a href="equipment.html">Equipment</a><a href="about.html">About</a><a href="videos.html">Videos</a><a href="quote.html">Request a Quote</a><a class="nav-phone" href="tel:+13073315487">307-331-5487</a>
+</nav>
 </div></header>
+
 <main id="top">
-<section class="page-hero"><div class="container"><p class="section-kicker">CODE-307 PROJECTS</p><h1>Our Projects</h1><p>A growing collection of completed installations and customer vehicles. More projects will be added as Code-307 continues to grow.</p></div></section>
-<section class="section builds-section"><div class="container"><div class="build-grid">
-<article class="build-card"><img src="brush-21-lightbar-install.jpg" alt="Code-307 lightbar installation on Wheatland Fire Brush 21"><div class="build-card-info"><p class="section-kicker">FEATURED INSTALL</p><h3>Wheatland Fire Brush 21</h3><p>Emergency lightbar installation completed on a Wheatland Fire Brush 21.</p></div></article>
-<article class="build-card"><img src="palmer-canyon-unit4-01.jpeg" alt="Palmer Canyon Brush 4 project"><div class="build-card-info"><p class="section-kicker">PROJECT GALLERY</p><h3>Palmer Canyon Brush 4 — Unit 4</h3><p>Lighting and equipment project featuring the Palmer Canyon Brush 4.</p></div></article>
-<article class="build-card"><img src="brush-16-thumbnail.jpg" alt="Wheatland Fire Department Brush 16 with an old-school rotator lightbar"><div class="build-card-info"><p class="section-kicker">NEW PROJECT</p><h3>Wheatland Fire Brush 16</h3><p>Installation of an old-school rotator lightbar on Wheatland Fire Department Brush 16.</p></div></article>
-</div>
-<div class="project-gallery"><div class="gallery-heading"><p class="section-kicker">PALMER CANYON BRUSH 4</p><h3>Project Photos</h3><p>A closer look at the vehicle and equipment involved in this project.</p></div><div class="gallery-grid">
-<a href="palmer-canyon-unit4-01.jpeg"><img src="palmer-canyon-unit4-01.jpeg" alt="Palmer Canyon Brush 4 photo 1"></a><a href="palmer-canyon-unit4-02.jpeg"><img src="palmer-canyon-unit4-02.jpeg" alt="Palmer Canyon Brush 4 photo 2"></a><a href="palmer-canyon-unit4-03.jpeg"><img src="palmer-canyon-unit4-03.jpeg" alt="Palmer Canyon Brush 4 photo 3"></a><a href="palmer-canyon-unit4-04.jpeg"><img src="palmer-canyon-unit4-04.jpeg" alt="Palmer Canyon Brush 4 photo 4"></a><a href="palmer-canyon-unit4-05.jpeg"><img src="palmer-canyon-unit4-05.jpeg" alt="Palmer Canyon Brush 4 photo 5"></a><a href="palmer-canyon-unit4-06.jpeg"><img src="palmer-canyon-unit4-06.jpeg" alt="Palmer Canyon Brush 4 photo 6"></a><a href="palmer-canyon-unit4-07.jpeg"><img src="palmer-canyon-unit4-07.jpeg" alt="Palmer Canyon Brush 4 photo 7"></a>
-</div></div>
-<div class="project-detail"><div class="gallery-heading"><p class="section-kicker">WHEATLAND FIRE BRUSH 16</p><h3>Old-School Rotator Lightbar Installation</h3><p>Code-307 added an old-school rotator lightbar to Wheatland Fire Department Brush 16, giving this classic brush unit a traditional emergency warning-light setup.</p></div><div class="project-detail-grid">
-<img src="brush-16-install.jpg" alt="Code-307 installing an old-school rotator lightbar on Wheatland Fire Brush 16">
-<img src="brush-16-completed.jpg" alt="Completed Wheatland Fire Brush 16 with old-school rotator lightbar">
-<video controls playsinline preload="metadata" poster="brush-16-thumbnail.jpg"><source src="brush-16-rotator-lightbar.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>
-</div></div>
-</div></section>
-<section class="subpage-cta"><div class="container"><h2>Want your vehicle featured here?</h2><p>Let's talk about your next lighting or upfitting project.</p><a class="btn btn-primary" href="quote.html">Request a Quote</a></div></section>
+<section class="projects-hero">
+  <div class="container">
+    <p class="section-kicker">CODE-307 PROJECTS</p>
+    <h1>Real Work. Real Vehicles.</h1>
+    <p>Explore emergency lighting and vehicle upfitting projects completed by Code-307 LLC for fire departments and specialty vehicle applications.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-kicker">OUR PORTFOLIO</p>
+      <h2>Built for the vehicle and the mission.</h2>
+      <p class="projects-intro">Every project has a different purpose. These completed installations show the kind of lighting, electrical and upfitting work Code-307 provides across Wyoming, Nebraska and Colorado.</p>
+    </div>
+
+    <div class="project-list">
+
+      <article class="project-feature">
+        <div class="project-media">
+          <img class="main-media" src="brush-21-lightbar-install.jpg" alt="Wheatland Fire Department Brush 21 with Code-307 emergency lightbar installation">
+          <video controls playsinline preload="metadata" poster="brush21-video-thumbnail.jpg">
+            <source src="brush-21-lightbar-install.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-label">FEATURED INSTALL</div>
+          <h2>Wheatland Fire Brush 21</h2>
+          <p>Emergency lightbar installation completed on Wheatland Fire Department's Brush 21.</p>
+          <div class="project-tags"><span class="project-tag">Emergency Lighting</span><span class="project-tag">Fire Apparatus</span><span class="project-tag">Lightbar Installation</span></div>
+          <div class="project-cta"><a class="btn btn-primary" href="quote.html">Request a Quote</a><span class="project-cta-note">Need a similar setup? Let's talk about your vehicle.</span></div>
+        </div>
+      </article>
+
+      <article class="project-feature reverse">
+        <div class="project-copy">
+          <div class="project-label">PROJECT GALLERY</div>
+          <h2>Palmer Canyon Brush 4 — Unit 4</h2>
+          <p>Emergency lighting and vehicle equipment project featuring Palmer Canyon Brush 4, with installation photos and project video.</p>
+          <div class="project-tags"><span class="project-tag">Emergency Lighting</span><span class="project-tag">Fire Apparatus</span><span class="project-tag">Vehicle Upfitting</span></div>
+          <div class="project-cta"><a class="btn btn-primary" href="quote.html">Request a Quote</a><span class="project-cta-note">Tell us what your vehicle needs to do.</span></div>
+          <div class="project-gallery-block">
+            <div class="project-gallery-heading"><h3>Project Photos</h3><p>A closer look at the vehicle and equipment.</p></div>
+            <div class="project-gallery-grid">
+              <a href="palmer-canyon-unit4-01.jpeg"><img src="palmer-canyon-unit4-01.jpeg" alt="Palmer Canyon Brush 4 project photo 1"></a>
+              <a href="palmer-canyon-unit4-02.jpeg"><img src="palmer-canyon-unit4-02.jpeg" alt="Palmer Canyon Brush 4 project photo 2"></a>
+              <a href="palmer-canyon-unit4-03.jpeg"><img src="palmer-canyon-unit4-03.jpeg" alt="Palmer Canyon Brush 4 project photo 3"></a>
+              <a href="palmer-canyon-unit4-04.jpeg"><img src="palmer-canyon-unit4-04.jpeg" alt="Palmer Canyon Brush 4 project photo 4"></a>
+              <a href="palmer-canyon-unit4-05.jpeg"><img src="palmer-canyon-unit4-05.jpeg" alt="Palmer Canyon Brush 4 project photo 5"></a>
+              <a href="palmer-canyon-unit4-06.jpeg"><img src="palmer-canyon-unit4-06.jpeg" alt="Palmer Canyon Brush 4 project photo 6"></a>
+              <a href="palmer-canyon-unit4-07.jpeg"><img src="palmer-canyon-unit4-07.jpeg" alt="Palmer Canyon Brush 4 project photo 7"></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-media">
+          <img class="main-media" src="palmer-canyon-unit4-01.jpeg" alt="Palmer Canyon Brush 4 emergency lighting project">
+          <video controls playsinline preload="metadata" poster="palmer-brush4-video-thumbnail.jpg">
+            <source src="Palmer-Canyon-Brush-4-Install.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </article>
+
+      <article class="project-feature">
+        <div class="project-media">
+          <img class="main-media" src="brush-16-completed.jpg" alt="Wheatland Fire Department Brush 16 with old-school rotator lightbar installed by Code-307">
+          <video controls playsinline preload="metadata" poster="brush-16-thumbnail.jpg">
+            <source src="brush-16-rotator-lightbar.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-label">RECENT PROJECT</div>
+          <h2>Wheatland Fire Brush 16</h2>
+          <p>Code-307 added an old-school rotator lightbar to Wheatland Fire Department Brush 16, giving this brush unit a traditional emergency warning-light setup.</p>
+          <div class="project-tags"><span class="project-tag">Emergency Lighting</span><span class="project-tag">Fire Apparatus</span><span class="project-tag">Rotator Lightbar</span></div>
+          <p style="margin-top:4px;font-size:.88rem;">Installation photos and video show the project from setup through completion.</p>
+          <div class="project-cta"><a class="btn btn-primary" href="quote.html">Request a Quote</a><span class="project-cta-note">Let's build the right lighting setup for your vehicle.</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="projects-bottom">
+  <div class="container">
+    <h2>Have a vehicle that needs an upfit?</h2>
+    <p>From a single lighting upgrade to a custom electrical or emergency-lighting project, Code-307 builds practical solutions around your vehicle and its mission.</p>
+    <a class="btn btn-primary" href="quote.html">Request a Quote</a>
+  </div>
+</section>
 </main>
-<footer class="footer"><div class="container footer-grid"><div><img src="code307-logo.png" alt="Code-307 LLC logo" class="footer-logo"><p>Emergency Lighting &amp; Upfitting</p><p class="footer-area">Wheatland, Wyoming<br>Serving Wyoming • Nebraska • Colorado</p></div><div class="footer-contact"><a href="tel:+13073315487">307-331-5487</a><a href="quote.html">Request a Quote</a></div></div><div class="container copyright">© <span id="year"></span> Code-307 LLC. All rights reserved.</div></footer>
+
+<footer class="footer"><div class="container footer-grid">
+<div><img src="code307-logo.png" alt="Code-307 LLC logo" class="footer-logo"><p>Emergency Lighting &amp; Upfitting</p><p class="footer-area">Wheatland, Wyoming<br>Serving Wyoming • Nebraska • Colorado</p></div>
+<div class="footer-contact"><a href="tel:+13073315487">307-331-5487</a><a href="quote.html">Request a Quote</a></div>
+</div><div class="container copyright">© <span id="year"></span> Code-307 LLC. All rights reserved.</div></footer>
 <script>const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open);});document.querySelectorAll('.nav a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body></html>
