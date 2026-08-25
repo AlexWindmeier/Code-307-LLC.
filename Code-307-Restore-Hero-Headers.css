@@ -1,0 +1,19 @@
+/* Code-307: restore shared hero image on Services, Equipment, and other standard subpages */
+.page-hero{
+  background:
+    linear-gradient(110deg, rgba(4,10,24,.94), rgba(16,21,47,.75), rgba(45,70,139,.34)),
+    url("code307-top-hero.jpg") center/cover no-repeat !important;
+  position:relative;
+  overflow:hidden;
+}
+.page-hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(4,10,24,.58),rgba(16,21,47,.38),rgba(45,70,139,.16));
+  pointer-events:none;
+}
+.page-hero .container{
+  position:relative;
+  z-index:1;
+}
