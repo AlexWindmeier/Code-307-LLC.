@@ -612,3 +612,99 @@ h1,h2,h3,h4,h5,h6{
     width:190px !important;
   }
 }
+
+/* =========================================================
+   CODE-307 EQUIPMENT TILE PHOTO BACKGROUNDS
+   Visual-only enhancement: existing wording and page structure retained.
+   ========================================================= */
+.equipment-grid .equipment-item {
+  position: relative;
+  overflow: hidden;
+  min-height: 236px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff !important;
+  background-color: #101b2b !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  border: 1px solid rgba(126,151,180,.45) !important;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  isolation: isolate;
+}
+
+/* The individual photos are intentionally applied to the cards themselves.
+   !important is used because the site's dark-theme card rule also sets a
+   background shorthand with !important. */
+.equipment-grid .equipment-item:nth-child(1) { background-image: url('Code307_backgrounds/light-bars.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(2) { background-image: url('Code307_backgrounds/grille-surface-lights.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(3) { background-image: url('Code307_backgrounds/interior-lighting.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(4) { background-image: url('Code307_backgrounds/scene-work-lights.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(5) { background-image: url('Code307_backgrounds/sirens-controls.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(6) { background-image: url('Code307_backgrounds/vehicle-consoles.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(7) { background-image: url('Code307_backgrounds/push-bumpers.jpg') !important; }
+.equipment-grid .equipment-item:nth-child(8) { background-image: url('Code307_backgrounds/reflective-graphics.jpg') !important; }
+
+/* Add a controlled dark veil without covering the photo or baked-in icon. */
+.equipment-grid .equipment-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(4,10,24,.05) 0%,
+    rgba(4,10,24,.16) 32%,
+    rgba(4,10,24,.76) 70%,
+    rgba(4,10,24,.96) 100%
+  );
+}
+
+/* Keep the existing tile text above the photo overlay. */
+.equipment-grid .equipment-item h3,
+.equipment-grid .equipment-item p {
+  position: relative;
+  z-index: 1;
+}
+
+/* The generated tile photos already contain the circular category icon. */
+.equipment-grid .equipment-item .equipment-icon {
+  display: none !important;
+}
+
+.equipment-grid .equipment-item h3 {
+  color: #fff !important;
+  margin: 0 0 8px;
+  font-size: 1.18rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0,0,0,.85);
+}
+
+.equipment-grid .equipment-item p {
+  color: #d7e0ec !important;
+  margin: 0;
+  font-size: .96rem;
+  line-height: 1.55;
+  text-shadow: 0 2px 10px rgba(0,0,0,.90);
+}
+
+.equipment-grid .equipment-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.38) !important;
+  border-color: rgba(126,151,180,.85) !important;
+}
+
+@media (max-width: 900px) {
+  .equipment-grid .equipment-item { min-height: 240px; }
+}
+
+@media (max-width: 600px) {
+  .equipment-grid .equipment-item {
+    min-height: 245px;
+    background-size: cover !important;
+  }
+  .equipment-grid .equipment-item:hover { transform: none; }
+}
