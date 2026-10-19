@@ -1,3 +1,5 @@
-CODE-307 LLC WEBSITE — VERSION 15
+Code-307 LLC Website - Version 18
 
-Visual baseline updated to match the photographic Equipment tile design. The site keeps the existing page structure and content while extending the dark tactical/emergency visual language across Home, Services, Projects, About, Quote, Equipment, header, CTA bands, cards, forms, and footer.
+Update: Added a Palmer Canyon 2 project feature to projects.html, including four optimized project photos and a compressed project video. Updated homepage project summary.
+
+To publish: extract the contents of this folder into the existing GitHub Pages repository and commit/push the changes.
